@@ -6,53 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP Landing Page</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+  <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">South Park Realty Group</div>
-      <ul>
-        <li>link 1</li>
-        <li>link 2</li>
-        <li>link 3</li>
-      </ul>
-    </nav>
+    <div class="nav-menu">
+        <div class="logo">South Park Realty Group</div>
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Listings</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+    </div>
 
-    <h1>Are you dreaming of moving out of the city and into the beautiful country side?</h1>
-    <h2>Sign up for the latest news and listings available!</h2>
-    <button type="submit">Sign Up</button>
+    <div class="header-content">
+        <div class="header-intro">
+        <h1>Are you dreaming of moving out of the city and into the beautiful country side?</h1>
+        <p>Sign up for the latest news and listings available!</p>
+        <button class="header-button" type="submit">Sign Up</button>
+      </div>
 
-    <!-- Insert image here -->
-    <img src="https://i.redd.it/ev6mza1s9oi81.jpg" alt="eric cartman">
+      <div class="header-image">
+        <img src="https://i.redd.it/ev6mza1s9oi81.jpg" alt="eric cartman" class="header-image">
+      </div>
+    </div>
   </header> 
 
   <h2>Listings</h2>
-  <h3>Coney Island Hotdog</h3>
-  <img src="images/hotdog_listing.jpeg" alt="Coney Island Hotdog" srcset="">
-  <img src="images/hotdog1.jpeg" alt="" srcset="">
-  <img src="images/hotdog2.jpeg" alt="" srcset="">
-  <img src="images/hotdog3.jpeg" alt="" srcset="">
-  <img src="images/hotdog4.jpeg" alt="" srcset="">
+  <div class="listing-images">
+      <!-- Hotdog Listing -->
+    <h3 class="coney-title">Coney Island Hotdog</h3>
+      <div class="slideshow-container hotdog">
+          <div class="mySlides1 fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/hotdog_listing.jpeg" alt="Coney Island Hotdog" class="slide-image">
+            <div class="text">Coney Island Hotdog</div>
+          </div>
+  
+        <div class="mySlides1 fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/hotdog1.jpeg" alt="Coney Island Hotdog" class="slide-image">
+          <div class="text">Gourmet Kitchen</div>
+        </div>
 
-  <h3>Clyde's House</h3>
-  <img src="images/clyde_listing.jpeg" alt="" srcset="">
-  <img src="images/clyde1.jpeg" alt="" srcset="">
-  <img src="images/clyde2.jpeg" alt="" srcset="">
-  <img src="images/clyde3.jpeg" alt="" srcset="">
-  <img src="images/clyde4.jpeg" alt="" srcset="">
+        <div class="mySlides1 fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/hotdog2.jpeg" alt="Coney Island Hotdog" class="slide-image">
+          <div class="text">Dining Area</div>
+        </div>
 
-  <img src="images/cartman.jpeg" alt="">
-  <h3>"Get out of that crime ridden, sewage drain you call a city and start living the country life you've always wanted!"</h3>
-  <p>-Eric Cartman, Agent</p>
+        <div class="mySlides1 fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/hotdog3.jpeg" alt="Coney Island Hotdog" class="slide-image">
+          <div class="text">Dining Area and Kitchen</div>
+        </div>
 
+        <div class="mySlides1 fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/hotdog4.jpeg" alt="Coney Island Hotdog" class="slide-image">
+          <div class="text">Mountain Views</div>
+        </div>
+
+        <div class="mySlides1">
+          <div class="numbertext">6 / 6</div>
+          <div class="description">
+            <p>Don't miss the opportunity to own the Historic Aspen Park Hotdog!</p>
+            <p>The benefits of owning this home include:</p>
+            <ul class="description-list">
+                <li class="description-list-item">200sq ft of pure luxury</li>
+                <li class="description-list-item">4 parking spaces</li>
+                <li class="description-list-item">Mountain views</li>
+                <li class="listing-price">listing price $249,000</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Next and Previous Buttons -->
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <!-- Clyde's House Listing -->
+    <h3 class="clyde-title">Clyde's House</h3>
+    <div class="slideshow-container clyde">
+        <div class="mySlides2 fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/clyde_listing.jpeg" alt="Clyde's House" class="slide-image">
+          <div class="text">Clyde's House</div>
+        </div>
+
+      <div class="mySlides2 fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/clyde1.jpeg" alt="Clyde's House" class="slide-image">
+        <div class="text">Living Room</div>
+      </div>
+
+      <div class="mySlides2 fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/clyde2.jpeg" alt="Clyde's House" class="slide-image">
+        <div class="text">Kitchen</div>
+      </div>
+
+      <div class="mySlides2 fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/clyde3.jpeg" alt="Clyde's House" class="slide-image">
+        <div class="text">New dining chairs from West Elm</div>
+      </div>
+
+      <div class="mySlides2 fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/clyde4.jpeg" alt="Clyde's House" class="slide-image">
+        <div class="text">En Suite Bathroom with a shiny new toilet</div>
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">6 / 6</div>
+        <div class="description">
+          <p>Clyde's House for Sale!</p>
+          <p>The awesomeness of owning Clyde's House include:</p>
+          <ul>
+            <div class="list">
+              <div class="left-list">
+              <li class="description-list-item">Located at 2210 Vista Drive</li>
+              <li class="description-list-item">Mid Colonial Style</li>
+              <li class="description-list-item">3 Bedrooms 2 Bathrooms 1 Half Bath</li>
+              <li class="description-list-item">2300sq ft</li>
+              <li class="description-list-item">New Appliances</li>
+              </div>
+
+              <div class="right-list">
+                <li class="description-list-item">Finished Basement</li>
+                <li class="description-list-item">Attached Garage</li>
+                <li class="description-list-item">En Suite Bathroom</li>
+                <li class="listing-price">listing price $3.5 million</li>
+              </div>
+            </div>
+          </ul>
+        </div>
+        </div>
+      <!-- Next and Previous Buttons -->
+      <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+   </div>
+  </div>
+
+  <div class="quote-section">
+    <img src="images/cartman.jpeg" alt="Eric Cartman">
+    <div class="quote">
+    <p>"Get out of that crime ridden, sewage drain you call a city and start living the country life you've always wanted!"</p>
+    <p class="quote-name">-Eric Cartman, Real Estate Agent</p>
+   </div>
+  </div>
   <!-- Call to action section -->
-  <h4>Looking to buy or sell your home?</h4>
-  <p>Call <span>South Park Realty Group</span> today to satisfy any real estate needs</p>
-  <p><span>Call me now!</span>(555)555-5555</p>
-
+  <div class="cta-section">
+    <h4>Looking to buy or sell your home?</h4>
+    <p>Call <span>South Park Realty Group</span> today to satisfy any real estate needs</p>
+    <p class=" contact-info animate__animated animate__pulse animate__infinite	infinite" >Call me now! (555)555-5555</p>
+</div>
   <footer>
-    <p>Copyright &copy; The Odin Project 2022 Created by Chantae P.</p>
+    <p>Copyright &copy; The Odin Project 2022 Created by Chantae Palacio</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
